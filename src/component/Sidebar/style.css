@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Raleway:wght@100;300;500&display=swap");
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 18%;
+  paddint-top: 1rem;
+  background-color: var(--bg-color);
+  overflow-y: scroll;
+  height: 100vh;
+  border-right: 2px solid var(--text-color);
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-logo {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--text-color);
+}
+.sidebar-logo h2 {
+  font-family: "Merienda", cursive !important;
+  font-size: 2rem;
+}
+.sidebar-browse,
+.sidebar-categories {
+  margin-top: 3.5rem;
+}
+.sidebar-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  color: var(--sidebar-title);
+  letter-spacing: 2px;
+  padding-bottom: 0.5rem;
+}
+.sidebar-section {
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.sidebar-item {
+  list-style-type: none;
+  color: var(--sidebar-navlinks);
+  padding: 0.5rem 0;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  font-weight: 450;
+}
+.sidebar-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  height: 100%;
+  background: #0fd5ff;
+  width: 0.2rem;
+  border-radius: 15px;
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.sidebar-item:hover:before {
+  transform: scaleY(1);
+}
+.sidebar-item:hover {
+  color: #0fd5ff;
+}
+@media (max-width: 1440px) {
+  .sidebar-logo {
+    margin-top: 0.8rem;
+  }
+  .sidebar-logo h2 {
+    font-size: 1.5rem;
+  }
+  .sidebar-browse,
+  .sidebar-categories {
+    margin-top: 2rem;
+  }
+  .sidebar-title {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+  }
+  .sidebar-section {
+    font-size: 0.8rem;
+  }
+  .sidebar-item {
+    color: var(--sidebar-navlinks);
+    padding: 0.4rem 0;
+  }
+}
+@media (max-width: 1080px) {
+  .sidebar {
+    min-width: 180px;
+  }
+  .sidebar-title {
+    margin-left: 1.5rem;
+  }
+  .sidebar-logo {
+    margin-left: 1.5rem;
+  }
+  .sidebar-section {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+  .sideMenu {
+    display: block;
+    position: absolute;
+    top: 4.2rem;
+    right: 2rem;
+    width: 60%;
+    height: 70vh;
+    overflow-y: scroll;
+    z-index: 500;
+  }
+  .sideMenu::-webkit-scrollbar {
+    display: block;
+    width: 15px;
+  }
+  .sideMenu::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .sideMenu::-webkit-scrollbar-thumb {
+    background: #d6dee1;
+    background-clip: content-box;
+    border-radius: 20px;
+    border: 6px solid transparent;
+  }
+  .sidebar-logo {
+    display: none;
+  }
+}

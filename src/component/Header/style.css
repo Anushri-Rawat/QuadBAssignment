@@ -1,0 +1,32 @@
+.search-input-box {
+  cursor: pointer;
+  color: var(--text-color);
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  padding: 8px 12px;
+  width: 250px;
+  box-shadow: 1px 1px 4px var(--search-box-shadow);
+  font-size: 14px;
+}
+.search-btn {
+  cursor: pointer;
+  background-color: #00b5db;
+  border-radius: 0 20px 20px 0;
+  padding: 10px;
+  width: 35px;
+  height: 100%;
+}
+.user-image {
+  height: 2.4rem;
+  border-radius: 50%;
+}
+.username {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+.theme-block {
+  margin-left: auto;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}

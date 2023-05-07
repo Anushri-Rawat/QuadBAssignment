@@ -1,0 +1,18 @@
+.modal-label {
+  color: var(--text-color);
+}
+.modal-input {
+  background: var(--second-white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  height: 45px;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0 10px;
+  outline: none;
+}
