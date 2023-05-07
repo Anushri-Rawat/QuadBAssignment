@@ -7,7 +7,11 @@ const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <section className="sidebar d-none d-md-block">
-      <div className="sidebar-logo" onClick={() => navigate("/")}>
+      <div
+        className="sidebar-logo"
+        onClick={() => navigate("/")}
+        style={{ cursor: "pointer" }}
+      >
         <h2>MOVEA</h2>
       </div>
       <div className="sidebar-browse">
